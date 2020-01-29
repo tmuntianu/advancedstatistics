@@ -1,8 +1,7 @@
 dnaRAD <-
 function()
 {
-dump("dnaRAD","c:\\StatBook\\dnaRAD.r")
-da=read.csv("c:\\StatBook\\dnaRAD.csv",stringsAsFactors=F)
+da=read.csv("./advancedstatistics/RcodeData/dnaRAD.csv",stringsAsFactors=F)
 Surv=da[,2];log10Surv=log10(Surv)
 rad=da[,1];n=length(rad)
 par(mfrow=c(1,1),mar=c(4,4,1,1))

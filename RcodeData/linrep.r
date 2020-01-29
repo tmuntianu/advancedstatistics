@@ -1,7 +1,6 @@
 linrep <-
 function(N=30)
 {
-dump("linrep","c:\\StatBook\\linrep.r")
 ni=round(runif(n=N,min=30,max=60))
 mui=round(runif(n=N,min=450,max=550))
 beta=30

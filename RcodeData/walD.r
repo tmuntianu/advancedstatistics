@@ -1,8 +1,7 @@
 walD <-
 function(job=1)
 {
-dump("walD","c:\\StatBook\\walD.r")
-da=read.csv("c:\\StatBook\\blackfriday.csv")
+da=read.csv("./advancedstatistics/RcodeData/blackfriday.csv")
 n=nrow(da)	
 if(job==1)
 {

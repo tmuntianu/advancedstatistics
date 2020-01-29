@@ -1,8 +1,7 @@
 amzn <-
 function(maxlag=8)
 {
-dump("amzn","c:\\StatBook\\amzn.r")
-d=read.csv("c:\\StatBook\\AMZN_weekly.csv")
+d=read.csv("./advancedstatistics/RcodeData/AMZN_weekly.csv")
 dat=as.character(d[,1])
 y=d$Adj.Close
 n=length(y);ti=1:n

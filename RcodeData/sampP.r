@@ -1,7 +1,6 @@
 sampP <-
 function(lambda=3,nSim=10000)
 {
-dump("sampP","c:\\StatBook\\sampP.r")
 n.max=lambda+5*sqrt(lambda)
 x=0:n.max
 p=dpois(x,lambda=lambda)

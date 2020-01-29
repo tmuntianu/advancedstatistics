@@ -1,7 +1,6 @@
 poissamn <-
 function(lambda0=1.2,mindet=.1,alpha=.05,pow=.9)
 {
-dump("poissamn","c:\\StatBook\\poissamn.r")
 q12=function(lambda0,n,alpha=0.05)
 {
 	reg12=function(q1,q2,lambda0,n)

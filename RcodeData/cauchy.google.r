@@ -1,7 +1,6 @@
 cauchy.google <-
 function(job=1,stock=16,n=50,theta=1,lambda=2,itMAX=10,nSim=10000)
 {
-dump("cauchy.google","c:\\StatBook\\cauchy.google.r")
 if(job==1) #vectorized simulations
 {
 	Y=matrix(theta+rcauchy(nSim*n)*lambda,ncol=n)
@@ -27,7 +26,7 @@ if(job==2)
 	min.ni=10000
 	for(i in 1:ns)
 	{
-		tabi=read.csv(paste("c:\\StatBook\\stocks\\",symb[i],".csv",sep=""),stringsAsFactors=F)
+		tabi=read.csv(paste("./advancedstatistics/RcodeData/stocks\\",symb[i],".csv",sep=""),stringsAsFactors=F)
 		ni=nrow(tabi)
 		if(min.ni>ni) min.ni=ni
 		all[1:ni,i]=tabi[,7]
@@ -37,7 +36,7 @@ if(job==2)
 	n1=n-1
 	r=(y[2:n]-y[1:n1])/y[1:n1]
 	
-	png("c:\\StatBook\\cauchy.google_2a.png",width=1000,height=500)
+	png("./advancedstatistics/RcodeData/cauchy.google_2a.png",width=1000,height=500)
 	par(mfrow=c(1,1),mar=c(4,4,1,1))
 	plot(1:n1,r,type="l",xlab="",ylab="")
 	mtext(side=1,"August 20, 2004 through March 4, 2016, days",cex=1.25,line=2.75)
@@ -49,7 +48,7 @@ if(job==2)
 	segments(-10,mr-SD,n1+10,mr-SD,lty=2,col=2)
 	dev.off()
 	
-	png("c:\\StatBook\\cauchy.google_2b.png",width=500,height=500)
+	png("./advancedstatistics/RcodeData/cauchy.google_2b.png",width=500,height=500)
 	par(mfrow=c(1,1),mar=c(4,4,1,1))
 	res=r[order(r)]
 	res=(res-mean(res))/sd(res)
@@ -76,7 +75,7 @@ if(job==2)
 		la=la+2*la/n*(2*sum(y^2/(1+y^2))-n)
 	}	
 	print(c(th,la))
-	png("c:\\StatBook\\cauchy.google_2c.bmp",width=1000,height=500)
+	png("./advancedstatistics/RcodeData/cauchy.google_2c.bmp",width=1000,height=500)
 	par(mfrow=c(1,1),mar=c(4,4,1,1))
 	plot(1:n1,r,type="l",xlab="",ylab="")
 	mtext(side=1,"August 20, 2004 through March 4, 2016, days",cex=1.25,line=2.75)
@@ -90,7 +89,7 @@ if(job==2)
 	legend(200,.15,c("Normal SD","Cauchy scale"),col=2:3,cex=2,lwd=3,bg="gray90")
 	dev.off()
 	
-	png("c:\\StatBook\\cauchy.google_2d.png",width=1000,height=500)
+	png("./advancedstatistics/RcodeData/cauchy.google_2d.png",width=1000,height=500)
 	par(mfrow=c(1,1),mar=c(4,4,1,1))
 	plot(1:n1,r,type="l",xlab="",ylab="")
 	mtext(side=1,"August 20, 2004 through March 4, 2016, days",cex=1.25,line=2.75)
@@ -104,7 +103,7 @@ if(job==2)
 	legend(200,.15,c("Normal SD","Cauchy scale"),col=2:3,cex=2,lty=2,bg="gray90")
 	dev.off()
 	
-	bmp("c:\\StatBook\\cauchy.google_2e.bmp",width=800,height=500)
+	bmp("./advancedstatistics/RcodeData/cauchy.google_2e.bmp",width=800,height=500)
 print(c(mr,SD,th,la))
 	par(mfrow=c(1,1),mar=c(4,4,1,1))
 	ret=seq(from=-.1,to=0,length=300)

@@ -2,7 +2,6 @@ qolS <-
 function(n=50,mu=50,sigmaQ=20,sigma.eps=2,alpha=1,lambda=3,ss=3)
 {
 # quality of life (QoL) versus survival
-dump("qolS","c:\\StatBook\\qolS.r")
 #set.seed(ss)
 #Q=matrix(nrow=n,ncol=100)
 #T=rep(0,n)
@@ -20,8 +19,8 @@ dump("qolS","c:\\StatBook\\qolS.r")
 #}
 #QOL=round(QOL)
 #xd=data.frame(cbind(id,ttL,QOL))
-#write.csv(xd,"c:\\StatBook\\QoL.csv",row.names=F)
-d=read.csv("c:\\StatBook\\QoL.csv",header=T)
+#write.csv(xd,"./advancedstatistics/RcodeData/QoL.csv",row.names=F)
+d=read.csv("./advancedstatistics/RcodeData/QoL.csv",header=T)
 id=d[,1];tt=d[,2];Q=d[,3]
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 plot(1,1,xlim=c(0,20),ylim=c(0,100),type="n",xlab="",ylab="")

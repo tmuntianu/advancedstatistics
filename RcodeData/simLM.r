@@ -1,7 +1,6 @@
 simLM <-
 function(n=10,sigma=1,beta=c(-1,1,-.5),nSim=10000,k=3)
 {
-dump("simLM","c:\\StatBook\\simLM.r")
 x=1:n
 X=cbind(rep(1,n),x,x^2)
 iXX=solve(t(X)%*%X)

@@ -1,11 +1,10 @@
 frlJL <-
 function()
 {
-dump("frlJL","c:\\StatBook\\frlJL.r")
 freqlet=matrix(c("a","8.167","b","1.492","c","2.782","d","4.253","e","12.702","f","2.228","g","2.015","h","6.094","i","6.966","j","0.153","k","0.772","l","4.025","m","2.406","n","6.749","o","7.507","p","1.929","q","0.095","r","5.987","s","6.327","t","9.056","u","2.758","v","0.978","w","2.360","x","0.150","y","1.974","z","0.074"),ncol=2,byrow=T)
 p0=as.numeric(freqlet[,2])/100
 m=length(p0)
-ch=scan("c:\\StatBook\\Jack_London_Call_of_the_Wild.char",what="")
+ch=scan("./advancedstatistics/RcodeData/Jack_London_Call_of_the_Wild.char",what="")
 ch=tolower(ch)
 frJL=rep(0,m)
 for(i in 1:m) frJL[i]=length(ch[ch==freqlet[i,1]])
@@ -14,7 +13,7 @@ p.hat=frJL/n
 PW=n*sum((p.hat-p0)^2/p0)
 print(paste("Obs. test stat=",PW,",p-value=",pchisq(PW,df=m-1,lower.tail=F)))
 
-chT=scan("c:\\StatBook\\Mark_Twain_The_Adventures_of_Tom_Sawyer_f1.txt.char",what="")
+chT=scan("./advancedstatistics/RcodeData/Mark_Twain_The_Adventures_of_Tom_Sawyer_f1.txt.char",what="")
 chT=tolower(chT)
 frT=rep(0,m)
 for(i in 1:m) frT[i]=length(chT[chT==freqlet[i,1]])

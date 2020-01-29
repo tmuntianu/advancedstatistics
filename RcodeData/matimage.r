@@ -1,7 +1,6 @@
 matimage <-
 function()
 {
-dump("matimage","c:\\StatBook\\matimage.r")
 M=matrix(round(runif(6,min=0,max=255)),ncol=2,nrow=3)
 print("Matrix M:")
 print(M)

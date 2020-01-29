@@ -1,7 +1,6 @@
 mixedDens <-
 function(mu.m=70,sd.m=4,mu.w=64,sd.w=3,p=.5,h=68)
 {
-dump("mixedDens","c:\\StatBook\\mixedDens.r")
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 x=seq(from=64-3*sd.w,to=mu.m+3*sd.m,length=100)
 f1.m=p*dnorm(x,mean=mu.m,sd=sd.m)

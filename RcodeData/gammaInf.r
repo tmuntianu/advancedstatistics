@@ -1,7 +1,6 @@
 gammaInf <-
 function(job=1,nSim=50000)
 {
-dump("gammaInf","c:\\StatBook\\gammaInf.r")
 if(job==1)
 {
 	par(mfrow=c(1,2),mar=c(4,4,3,1))

@@ -1,7 +1,6 @@
 jb <-
 function(job=1,v=.1,delta=.9,T=60,tau=5,nSim=100000)
 {
-dump("jb","c:\\StatBook\\jb.r")
 if(job==1)
 {
 	par(mfrow=c(1,2),mar=c(4,4,3,1))

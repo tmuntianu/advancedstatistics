@@ -1,7 +1,6 @@
 rugf2 <-
 function(p=0.4,mu1=1,mu2=3,n=1000)
 {
-dump("rugf2","c:\\StatBook\\rugf2.r")
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 Y=runif(n)
 qy=qnorm(Y)

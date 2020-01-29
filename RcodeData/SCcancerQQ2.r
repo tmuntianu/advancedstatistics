@@ -1,8 +1,7 @@
 SCcancerQQ2 <-
 function()
 {
-    dump("SCcancerQQ2","c:\\StatBook\\SCcancerQQ2.r")
-    x=read.csv(file="c:\\StatBook\\DeathYears.csv",header=F)[,1]
+    x=read.csv(file="./advancedstatistics/RcodeData/DeathYears.csv",header=F)[,1]
 	par(mfrow=c(1,1),mar=c(4.25,4.5,1,1),cex.axis=1.25,cex.lab=1.5)
     x=x[order(x)];n=length(x)
     y=(1:n-.5)/n

@@ -1,7 +1,6 @@
 cov01 <-
 function(delta=.1,N=10000,n=50,nSim=1000)
 {
-dump("cov01","c:\\StatBook\\cov01.r")
 ncov=rep(0,nSim)
 deltaN=round(delta*N)
 for(isim in 1:nSim)

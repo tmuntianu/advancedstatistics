@@ -1,7 +1,6 @@
 michm <-
 function(job=1,a=100,b=1,x=1:10,sigma=2,ss=3,nSim=1000,alpha=.05,N=100)
 {
-dump(c("michm","polsum","polmultk","polmult","MMpolyn"),"c:\\StatBook\\michm.r")
 n=length(x)
 if(job==0) # plot 4 typical samples 
 {

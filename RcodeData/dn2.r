@@ -1,7 +1,6 @@
 dn2 <-
 function(n=100,muX=1,sdX=2,muY=1,sdY=2)
     {
-     dump("dn2","c:\\statbook\\dn2.r")
      x<-seq(from=muX-3*sdX,to=muX+3*sdX,length=n)
      y<-seq(from=muY-3*sdY,to=muY+3*sdY,length=n)
      zx=rep((x-muX)/sdX,times=n);zy=rep((y-muY)/sdY,each=n)

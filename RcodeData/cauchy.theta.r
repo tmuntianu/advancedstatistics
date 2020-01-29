@@ -1,7 +1,6 @@
 cauchy.theta <-
 function(theta=1,n=50,itMAX=10,ss=3)
 {
-dump("cauchy.theta","c:\\StatBook\\cauchy.theta.r")
 set.seed(ss)
 Y=theta+rcauchy(n)
 mY=median(Y)

@@ -1,7 +1,6 @@
 chismult <-
 function(p=c(.1,.2,.5,.2),n=30,nY=50,nSim=100000)
 {
-dump("chismult","c:\\StatBook\\chismult.r")
 par(mfrow=c(1,2),cex.lab=1.5,cex.main=1.5)
 p=p/sum(p)
 m=length(p)

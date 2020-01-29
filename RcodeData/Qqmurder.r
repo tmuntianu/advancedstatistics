@@ -1,9 +1,8 @@
 QQmurder <-
 function()
 {
-dump("QQmurder","c:\\statbook\\QQmurder.r")
 par(mfrow=c(1,2),mar=c(4,4,3,1),cex.main=1.3)
-da=matrix(scan("c:\\statbook\\wikmurdr.txt",what=""),byrow=T,ncol=4)
+da=matrix(scan("./advancedstatistics/RcodeData/wikmurdr.txt",what=""),byrow=T,ncol=4)
 N=nrow(da)
 nam.state=da[,1]
 n.state=as.numeric(da[,2])

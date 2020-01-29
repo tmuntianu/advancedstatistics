@@ -1,7 +1,6 @@
 longpiece <-
 function(nExp=100000)
 {
-	dump("longpiece","c:\\StatBook\\longpiece.r")
 	X=runif(nExp)
 	X.long=X #initialization
 	X.long[X<0.5]=1-X[X<0.5] # if X is short take the other part

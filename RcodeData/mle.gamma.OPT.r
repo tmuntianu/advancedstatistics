@@ -1,7 +1,6 @@
 mle.gamma.OPT <-
 function(ss=3,alpha=1,lambda=2,n=20,maxit=20)
 {
-dump("mle.gamma.OPT","c:\\StatBook\\mle.gamma.OPT.r")
 set.seed(ss)
 X=rgamma(n,shape=alpha,rate=lambda)
 lMM=mean(X)/var(X);aMM=mean(X)^2/var(X)

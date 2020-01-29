@@ -1,8 +1,7 @@
 survROC <-
 function()
 {
-dump("survROC","c:\\StatBook\\survROC.r")
-da=read.csv("c:\\StatBook\\survcanc.csv",header=T)
+da=read.csv("./advancedstatistics/RcodeData/survcanc.csv",header=T)
 ind=da[,2];st=da[,1] #0=conventional, 1=new
 st1=st[ind==0];st2=st[ind==1]
 n1=length(st1);n2=length(st2)

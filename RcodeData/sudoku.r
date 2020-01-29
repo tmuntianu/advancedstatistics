@@ -1,7 +1,6 @@
 sudoku <-
 function(job=1,setrand=3)
 {
-dump("sudoku","c:\\StatBook\\sudoku.r")
 set.seed(setrand)
 test.sudoku=function(sud)
 {

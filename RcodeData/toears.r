@@ -1,8 +1,7 @@
 toears <-
 function(job=1)
 {
-dump("toears","c:\\StatBook\\toears.r")
-x=scan("c:\\StatBook\\toears.txt");n=length(x);x10=log10(x)
+x=scan("./advancedstatistics/RcodeData/toears.txt");n=length(x);x10=log10(x)
 if(job==1)
 {
 	par(mfrow=c(1,2),mar=c(4,4,2,.1))

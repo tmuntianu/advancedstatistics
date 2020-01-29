@@ -1,7 +1,6 @@
 poistest <-
 function(n=2,lambda0=2,alpha=0.05,N=30,nSim=100000)
 {
-dump("poistest","c:\\StatBook\\poistest.r")
 #one-sided test
 par(mfrow=c(1,2),mar=c(4,4,3,1),cex.lab=1.25)
 

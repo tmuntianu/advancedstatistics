@@ -1,7 +1,6 @@
 expgr <-
 function(job=0,A.true=10,lambda.true=0.1,x=1:10,sigma=.2,nSim=10000,N=200,alpha=.05) #vectorized NLS simulations
 {
-dump("expgr","c:\\StatBook\\expgr.r")
 print(date())
 n=length(x)
 Y.true=A.true*(1-exp(-lambda.true*x))

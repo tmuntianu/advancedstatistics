@@ -1,7 +1,6 @@
 pmaxmin <-
 function(n=10,N=100000)
 {
-dump("pmaxmin","c:\\StatBook\\pmaxmin.r")
 X=matrix(runif(n*N),ncol=n)
 Xn=apply(X,1,max)
 X1=apply(X,1,min)

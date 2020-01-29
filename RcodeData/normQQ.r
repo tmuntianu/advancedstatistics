@@ -1,7 +1,6 @@
 norm3QQ <-
 function(i1=1,i2=2)
 {
-	dump("norm3QQ","c:\\StatBook\\norm3QQ.r")
 	symb=c("HPQ","HD","MS","M","VZ","T","S","C","TGT","WMT","GM","XOM","F","YHOO","IBM","GOOGL","MSFT")
 	nmST=c("Hewlett-Packard","Home Depo","Morgan Stanley","Macys","Verizon","AT&T","Sprint","Citigroup","Target","Walmart","General Motors","Exxon","Ford Motor","Yahoo","IBM","Google","Microsoft")
 	ns=length(symb)
@@ -10,7 +9,7 @@ function(i1=1,i2=2)
 	min.ni=10000
 	for(i in 1:ns)
 	{
-		tabi=read.csv(paste("c:\\StatBook\\stocks\\",symb[i],".csv",sep=""),stringsAsFactors=F)
+		tabi=read.csv(paste("./advancedstatistics/RcodeData/stocks\\",symb[i],".csv",sep=""),stringsAsFactors=F)
 		ni=nrow(tabi)
 		if(min.ni>ni) min.ni=ni
 		all[1:ni,i]=tabi[,7]

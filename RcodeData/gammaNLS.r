@@ -1,7 +1,6 @@
 gammaNLS <-
 function(n=100,alpha=1,lambda=2,nSim=10000,ss=4)
 {
-dump("gammaNLS","c:\\StatBook\\gammaNLS.r")
 set.seed(ss)
 Fi=(1:n-.5)/n
 ab1=ab2=ab3=ab4=matrix(ncol=2,nrow=nSim)

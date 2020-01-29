@@ -1,7 +1,6 @@
 kern.movie <-
 function(n=20,ss=4)
 {
-dump("kern.movie","c:\\StatBook\\kern.movie.r")
 set.seed(ss)
 dens=c("gaussian", "epanechnikov","rectangular","triangular");ns=length(dens)
 hs=seq(from=.1,to=.5,by=.001);nhs=length(hs)
@@ -14,7 +13,7 @@ for(ih in 1:nhs)
 	if(ih<10) cih=paste("000",cih,sep="")
 	if(ih<100 & ih>9) cih=paste("00",cih,sep="")
 	if(ih<1000 & ih>99) cih=paste("0",cih,sep="")
-	jpeg(paste("c:\\StatBook\\kern.movie\\h",cih,".jpg",sep=""),width=1000,height=700)
+	jpeg(paste("./advancedstatistics/RcodeData/kern.movie\\h",cih,".jpg",sep=""),width=1000,height=700)
 	par(mfrow=c(1,1),mar=c(4,4,3,1))
 	plot(x,x,type="n",xlim=c(low,up),ylim=c(0,.5),xlab="Data, x",ylab="Kernel density",main=paste("Bandwidth, h=",hs[ih],sep=""))
 	rug(x,lwd=3)	

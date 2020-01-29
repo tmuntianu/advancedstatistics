@@ -1,7 +1,6 @@
 betaMM <-
 function(alpha=2,beta=3,n=100,nSim=10000)
 {
-dump("betaMM","c:\\StatBook\\betaMM.r")
 print(date())
 der=rep(0,2);H=matrix(ncol=2,nrow=2)
 ab=hv=matrix(ncol=2,nrow=nSim)

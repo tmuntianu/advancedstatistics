@@ -1,7 +1,6 @@
 betaMM.apply <-
 function(alpha=2,beta=3,n=100,nSim=10000)
 {
-dump("betaMM.apply","c:\\StatBook\\betaMM.apply.r")
 print(date())
 X=matrix(rbeta(n*nSim,alpha,beta),ncol=n)
 MM=function(x)

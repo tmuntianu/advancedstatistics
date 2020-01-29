@@ -1,7 +1,6 @@
 luR <-
 function(n=5,thetaL=0,thetaU=1,Nsim=1000000)
 {
-dump("luR","c:\\StatBook\\luR.r")
 print(date())
 X=matrix(runif(Nsim*n,min=thetaL,max=thetaU),nrow=Nsim)
 xb=apply(X,1,mean)

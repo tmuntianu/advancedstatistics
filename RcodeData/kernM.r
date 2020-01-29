@@ -1,7 +1,6 @@
 kernM <-
 function(n=20,ss=4)
 {
-dump("kernM","c:\\StatBook\\kernM.r")
 set.seed(ss)
 par(mfrow=c(1,2),mar=c(4,4,3,1))
 dens=c("gaussian", "epanechnikov","rectangular","triangular");ns=length(dens)

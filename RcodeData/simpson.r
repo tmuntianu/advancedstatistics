@@ -1,7 +1,6 @@
 simpson <-
 function(job=1)
 {
-dump("simpson","c:\\StatBook\\simpson.r")
 #n=100;st=3
 #set.seed(st)
 #x1=rnorm(n,mean=40,sd=10)
@@ -10,8 +9,8 @@ dump("simpson","c:\\StatBook\\simpson.r")
 #y2=rnorm(n,mean=180-.25*(x2-40),sd=5)
 #X=data.frame(cbind(round(c(x1,x2),1),round(c(y1,y2),1),c(rep("W",n),rep("M",n))))
 #names(X)=c("BodyW","ExInt","Sex")
-#write.csv(X,"c:\\StatBook\\Simpson.csv",row.names=F)
-d=read.csv("c:\\StatBook\\Simpson.csv",header=T)
+#write.csv(X,"./advancedstatistics/RcodeData/Simpson.csv",row.names=F)
+d=read.csv("./advancedstatistics/RcodeData/Simpson.csv",header=T)
 x=d[,1];y=d[,2];sex=d[,3]
 nW=length(sex[sex=="W"]);nM=length(sex[sex=="M"])
 par(mfrow=c(1,2),mar=c(4,4,3,1),cex.main=2)

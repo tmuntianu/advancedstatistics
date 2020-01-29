@@ -1,7 +1,6 @@
 sbE <-
 function(job=1,m=20,p=0.45,n=15,N=100,ss=3)
 {
-	dump("sbE", "c:\\statbook\\sbE.r")
 	set.seed(ss)
 	if(job==1)
 	{

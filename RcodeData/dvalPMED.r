@@ -1,8 +1,7 @@
 dvalPMED <-
 function()
 {
-dump("dvalPMED","c:\\StatBook\\dvalPMED.r")
-da=read.csv("c:\\StatBook\\dvalPMED.csv")
+da=read.csv("./advancedstatistics/RcodeData/dvalPMED.csv")
 o=lm(bloodpres~drug+smoking+BMI+man+age+famhist+exer,data=da)
 so=summary(o)
 ta=so$coefficients

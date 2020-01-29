@@ -1,8 +1,7 @@
 obesegene <-
 function()
 {
-dump("obesegene","c:\\StatBook\\obesegene.r")
-da=read.csv("c:\\StatBook\\obesegene.csv",header=T)
+da=read.csv("./advancedstatistics/RcodeData/obesegene.csv",header=T)
 G1=da$G1;G2=da$G2;age=da$age;sex=da$sex;BMIP=da$BMIP;BMI=da$BMI
 m=matrix(c(1,1,1,1,2,2,2,2,2,2),ncol=5)
 layout(m);par(mar=c(4,4,3,1),cex.main=2)

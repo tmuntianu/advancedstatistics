@@ -1,7 +1,6 @@
 ell2 <-
 function(ro=.7,const=1)
 {
-dump("ell2","c:\\StatBook\\ell2.r")
 par(mfrow=c(1,1),mar=c(2,2,1,2))
 zex=sqrt(const/(1-ro^2))
 z1=seq(from=-zex,to=zex,length=200)

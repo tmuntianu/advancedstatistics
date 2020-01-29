@@ -1,7 +1,6 @@
 qtrpow <-
 function(pow=.8,alpha=.05,a=0.01)
 {
-dump("qtrpow","c:\\StatBook\\qtrpow.r")
 
 xtx=matrix(ncol=3,nrow=3)
 n1=4;n2=50

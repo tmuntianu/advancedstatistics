@@ -1,7 +1,6 @@
 ci.binpr <-
 function(n=30,lambda=.95,nSim=1000000)
 {
-dump("ci.binpr","c:\\StatBook\\ci.binpr.r")
 par(mfrow=c(1,1),cex.main=2,cex.lab=1.5)
 alpha=1-lambda
 Z1a=qnorm(1-alpha/2)

@@ -1,7 +1,6 @@
 multCLT <-
 function(nSim=10000,N=50)
 {
-dump("multCLT","c:\\StatBook\\multCLT.r")
 par(mfrow=c(1,2),mar=c(4.5,4.5,3,1),cex.lab=1.5)
 cdf=cdfIND=matrix(0,ncol=N,nrow=N)
 for(n in c(5,30))

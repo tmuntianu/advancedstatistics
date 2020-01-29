@@ -5,7 +5,6 @@ function(yx,ro=0,x,hx=1,hy=1)
 # yx is the nx2 data point (y,x)
 # x=array for which E(Y|X=x) is evaluated
 # hx,hy bandwidth for y and x
-dump("Eyx","c:\\StatBook\\Eyx.r")
 Nx=length(x)
 eNx=rep(1,Nx);en=rep(1,nrow(yx))
 M=(x%*%t(en)-eNx%*%t(yx[,2]))/hx

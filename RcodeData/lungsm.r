@@ -1,7 +1,6 @@
 lungsm <-
 function()
 {
-dump("lungsm","c:\\StatBook\\lungsm.r")
 #logistic regression for the 2x2 table
 yx11=cbind(rep(1,648),rep(1,648))
 yx10=cbind(rep(1,122),rep(0,122))

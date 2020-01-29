@@ -1,7 +1,6 @@
 tr.binom <-
 function(n=10,p=.3,lambda=.9)
 {
-dump("tr.binom","c:\\StatBook\\tr.binom.r")
 minDIF=n+1
 for(m in 0:n)
 for(M in m:n)

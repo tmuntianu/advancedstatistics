@@ -1,7 +1,6 @@
 simCookie <-
 function(n=3,m=4,nSim=100000)
 {
-dump("simCookie","c:\\StatBook\\simCookie.r")
 pr=0 #initialize counter
 for(isim in 1:nSim) #simulations
 {

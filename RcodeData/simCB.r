@@ -1,7 +1,6 @@
 simCB <-
 function(job=1,n=10,beta=c(1,1,-.05),sigma=1,NX=100,alpha=.05,sk=3,nSim=10000,xmin=-20,xmax=30)
 {
-dump("simCB","c:\\StatBook\\simCB.r")
 set.seed(sk)
 X=cbind(rep(1,n),1:n,(1:n)^2)
 m=ncol(X)

@@ -1,7 +1,6 @@
 gampois <-
 function(lambda=5,alpha=300,nSim=100000)
 {
-dump("gampois","c:\\StatBook\\gampois.r")
 par(mfrow=c(1,2),mar=c(4,4,1,1))
 Nmax=24*60 # minutes in a day
 talpha=rep(NA,nSim) #array of times

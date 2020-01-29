@@ -1,7 +1,6 @@
 pois2est <-
 function(Nsim=100000)
 {
-dump("pois2est","c:\\StatBook\\pois2est.r")
 par(mfrow=c(1,2),mar=c(4,4,3,1))
 lambda=seq(from=.1,to=1.5,by=.1)
 LL=length(lambda)

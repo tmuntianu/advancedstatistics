@@ -1,7 +1,6 @@
 genmixN <-
 function(mu1=1,mu2=2,p=.3,N=1000)
     {
-       dump("genmixN","c:\\StatBook\\genmixN.r")
        x=c(rnorm(N*p,mean=mu1,sd=1),rnorm(N*(1-p),mean=mu2,sd=1))
        x=x[order(x)]
        NN=length(x)

@@ -1,7 +1,6 @@
 cdfMED <-
 function(n=5,mu=1,nSim=10000,lambda=.1)
 {
-dump("cdfMED","c:\\StatBook\\cdfMED.r")
 par(mfrow=c(1,1),mar=c(4,4,3,1))
 med=rep(NA,nSim)
 for(i in 1:nSim)

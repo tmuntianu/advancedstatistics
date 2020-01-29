@@ -1,7 +1,6 @@
 cltP <-
 function(nExp=10000)
 {
-dump("cltP","c:\\StatBook\\cltP.r")
 par(mfrow=c(1,1),mar=c(4.5,4.5,1,1),cex.lab=1.5)
 X=runif(nExp);Y=rnorm(nExp)
 Z=X+X^2+Y+Y^2

@@ -1,7 +1,6 @@
 nen <-
 function(job=1,a1.true=10,a2.true=2,a3.true=.01,n=20,nMAX=200,sigma=.3,nSim=10000)
 {
-dump(c("nen","nen.out1"),"c:\\StatBook\\nen.r")
 fr=function(a1,a2,a3,x) 
 {
 	et=exp(-a3*x)

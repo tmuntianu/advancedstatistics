@@ -1,7 +1,6 @@
 dint <-
 function(job=1,N=1000000)
 {
-dump("dint","c:\\StatBook\\dint.r")
 if(job==1) #uniform distribution
 {
 	X=runif(n=N,min=-1,max=1)

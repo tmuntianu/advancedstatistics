@@ -1,8 +1,7 @@
 hfn <-
 function(job=0,st=58)
 {
-dump("hfn","c:\\StatBook\\hfn.r")
-da=read.csv("c:\\StatBook\\HeightFootNose.csv",header=T)
+da=read.csv("./advancedstatistics/RcodeData/HeightFootNose.csv",header=T)
 par(mfrow=c(1,3),mar=c(3.5,3.5,3,1))
 plot(da$Foot,da$Height,xlab="",ylab="")
 title(paste("Height versus length of foot, R =",round(cor(da$Foot,da$Height),2)))

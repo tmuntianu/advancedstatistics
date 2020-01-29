@@ -1,7 +1,6 @@
 stickSQ <-
 function(job=1,nSticks=1000,L=1)
 {
-dump("stickSQ","c:\\StatBook\\stickSQ.r")
 if(job==1) #plot
 {
 	par(mfrow=c(1,1),mar=c(.1,.1,1,.1))

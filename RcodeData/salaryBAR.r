@@ -1,10 +1,9 @@
 salaryBAR <-
 function()
 {
-dump("salaryBAR","c:\\StatBook\\salaryBAR.r")
-sv=scan("c:\\StatBook\\Vermont.txt",what="")
+sv=scan("./advancedstatistics/RcodeData/Vermont.txt",what="")
 sv=as.numeric(sv)/1000;sv=sv[!is.na(sv)];nv=length(sv)
-sc=scan("c:\\StatBook\\Connecticut.txt",what="")
+sc=scan("./advancedstatistics/RcodeData/Connecticut.txt",what="")
 sc=as.numeric(sc)/1000;sc=sc[!is.na(sc)];nc=length(sc)
 par(mfrow=c(1,2),mar=c(2,4,2,.1))
 boxplot(list(sv,sc),names=c("Vermont","Connecticut"),ylab="Salary, $1000")

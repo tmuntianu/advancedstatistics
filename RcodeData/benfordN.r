@@ -1,7 +1,6 @@
 benfordN <-
 function(nSim=100000,mu=2)
 {
-dump("benfordN","c:\\StatBook\\benfordN.r")
 par(mfrow=c(1,3))
 x=seq(from=0,to=500,length=200)
 a=10^(-10);b=10^10

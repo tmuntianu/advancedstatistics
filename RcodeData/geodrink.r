@@ -1,8 +1,7 @@
 geodrink <-
 function(job=1,alpha=.05)
 {
-dump("geodrink", "c:\\StatBook\\geodrink.r")
-dat=read.csv("c:\\StatBook\\kidsdrinkDAT.csv")
+dat=read.csv("./advancedstatistics/RcodeData/kidsdrinkDAT.csv")
 print(names(dat))
 o=glm(bingedr~frndalc+age+black+senseek+alcmovie+parentmont+cthhsz,family=binomial,data=dat)
 a=coef(o)

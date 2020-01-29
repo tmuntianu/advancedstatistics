@@ -1,7 +1,6 @@
 intrD3 <-
 function(nSim=10000)
 {
-dump("intrD3","c:\\StatBook\\intrD3.r")
 z=rep(1,4)
 rea=rep(0,nSim)
 for(isim in 1:nSim)

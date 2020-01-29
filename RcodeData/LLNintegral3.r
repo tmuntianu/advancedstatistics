@@ -1,7 +1,6 @@
 LLNintegral3 <-
 function(p=0.4,n=10)
 {
-	dump("LLNintegral3","c:\\StatBook\\LLNintegral3.r")
 	par(mfrow=c(1,1),mar=c(4,4,3,.5))
 	k=0:n
 	cdfB=pbinom(q=k,size=n,prob=p)

@@ -1,7 +1,6 @@
 power.nls <-
 function(job=1,n=20,sigma=.2,nSim=500,alpha=.05)
 {
-dump(c("power.nls","power.nls_1.out"),"c:\\StatBook\\power.nls.r")
 fr=function(a1,a2,a3,x) # regression function
 {
 	et=exp(-a3*x)

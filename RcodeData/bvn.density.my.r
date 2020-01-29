@@ -3,7 +3,6 @@ function(x.data,y.data,x,y,hx,hy,ro=cor(x.data,y.data))
 {
     #x.data and y.data are coordinates of n data points
     # x and y are coordinates of the grid where f=kernel density is evaluated
-    dump("bvn.density.my","c:\\StatBook\\bvn.density.my.r")
     n=length(x.data);nx=length(x);ny=length(y)
 	ey=rep(1,ny);ex=rep(1,nx)
 	Kxy=matrix(0,nrow=nx,ncol=ny)

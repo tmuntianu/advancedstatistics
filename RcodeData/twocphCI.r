@@ -1,8 +1,7 @@
 twocphCI <-
 function(alpha=.05)
 {
-dump("twocphCI","c:\\StatBook\\twocphCI.r")
-da=read.csv("c:\\StatBook\\twocph.csv",header=T,stringsAsFactors=F)
+da=read.csv("./advancedstatistics/RcodeData/twocph.csv",header=T,stringsAsFactors=F)
 min=as.vector(da[,1]);Vt=as.vector(da[,2])
 
 VtM=function(V0,alpha,beta,x) # Two-compartment function

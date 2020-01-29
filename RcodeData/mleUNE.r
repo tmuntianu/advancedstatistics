@@ -1,7 +1,6 @@
 mleUNE <-
 function(sr=4)
 {
-	dump("mleUNE","c:\\StatBook\\mleUNE.r")
 	set.seed(sr)
 	r=runif(n=200,min=1,max=25)
 	r=c(r,100)

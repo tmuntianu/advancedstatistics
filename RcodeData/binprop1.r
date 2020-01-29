@@ -1,7 +1,6 @@
 binprop1 <-
 function(job=1,n=50,alpha=0.05,p0=0.2,N=50,nSim=100000)
 {
-dump("binprop1","c:\\StatBook\\binprop1.r")
 
 if(job==1) #Testing the significance level of the Wald test for binomial proportion
 {	

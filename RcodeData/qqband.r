@@ -1,7 +1,6 @@
 qqband <-
 function(lambda=.95)
 {
-dump("qqband","c:\\StatBook\\qqband.r")
 par(mfrow=c(1,3))
 n=c(10,100,1000)
 for(i in 1:3)

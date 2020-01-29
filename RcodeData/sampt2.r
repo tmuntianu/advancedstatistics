@@ -1,7 +1,6 @@
 sampt2 <-
 function(eff.size=-1,alpha=.02,p=.8,NMAX=100)
 {
-dump("sampt2","c:\\StatBook\\sampt2.r")
 N=6:NMAX
 pow1=pt(qt(alpha,df=N-2),df=N-2,ncp=eff.size*sqrt(N)/2)
 t1a=qt(1-alpha/2,df=N-2)

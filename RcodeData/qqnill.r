@@ -1,7 +1,6 @@
 qqnill <-
 function(n=100)
 {
-dump("qqnill","c:\\StatBook\\qqnill.r")
 par(mfrow=c(1,2),cex.main=1.5,cex.lab=1.25)
 x=rnorm(n,mean=1,sd=2)
 x=x[order(x)]

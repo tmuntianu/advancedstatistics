@@ -1,11 +1,10 @@
 salary <-
 function () 
 {
-dump("salary","c:\\StatBook\\salary.r")
 #CDF statistical comparison
-sv=scan("c:\\StatBook\\Vermont.txt",what="")
+sv=scan("./advancedstatistics/RcodeData/Vermont.txt",what="")
 sv=as.numeric(sv);sv=sv[!is.na(sv)]
-sc=scan("c:\\StatBook\\Connecticut.txt",what="")
+sc=scan("./advancedstatistics/RcodeData/Connecticut.txt",what="")
 sc=as.numeric(sc);sc=sc[!is.na(sc)]
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 sv=sv[order(sv)];sc=sc[order(sc)]

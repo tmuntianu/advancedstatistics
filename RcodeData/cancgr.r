@@ -1,7 +1,6 @@
 cancgr <-
 function(p=.501,y0=100,T=365,nSim=100)
     {
-dump("cancgr","c:\\StatBook\\cancgr.r")
     t=1:T
     Y=matrix(0,nrow=T+1,ncol=nSim)
     for(isim in 1:nSim)

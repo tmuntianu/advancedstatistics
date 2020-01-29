@@ -1,7 +1,6 @@
 poisR <-
 function(N=200)
 {
-dump("poisR","c:\\StatBook\\poisR.r")
 
 #set.seed(3)
 #n=834
@@ -13,9 +12,9 @@ dump("poisR","c:\\StatBook\\poisR.r")
 #rate=rate[rate>0]
 #trviol=rpois(n=n,lambda=rate)
 #da=as.data.frame(cbind(trviol,marriage,gender,age,income))
-#write.csv(da,"c:\\StatBook\\Traffic.Viol.csv",row.names=F)
+#write.csv(da,"./advancedstatistics/RcodeData/Traffic.Viol.csv",row.names=F)
 
-da=read.csv("c:\\StatBook\\Traffic.Viol.csv",header=T)
+da=read.csv("./advancedstatistics/RcodeData/Traffic.Viol.csv",header=T)
 o=glm(trviol~marriage+gender+age+income,data=da,family=poisson)
 a=coef(o)
 print(summary(o))

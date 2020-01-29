@@ -1,7 +1,6 @@
 sbmultD <-
 function(n=50,phi=80)
 {
-dump("sbmultD","c:\\StatBook\\sbmultD.r")
 par(mfrow=c(1,2),mar=c(0,0,0,0))
 x=seq(from=-4,to=4,length=n)
 xn=rep(x,n);yn=rep(x,each=n)

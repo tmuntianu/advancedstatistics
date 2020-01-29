@@ -1,7 +1,6 @@
 pti.gamma.Rome <-
 function(p=.75,alpha=3,lambda=2)
 {
-dump("pti.gamma.Rome","c:\\StatBook\\pti.gamma.Rome.r")
 t=qgamma((1-p)/2,shape=alpha,rate=lambda)
 T=qgamma((1+p)/2,shape=alpha,rate=lambda)
 tT=c(t,T)

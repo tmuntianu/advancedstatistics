@@ -1,7 +1,6 @@
 ranlRest <-
 function(Nexp=500,r=.25)
 {
-dump("ranlRest","c:\\statbook\\ranlRest.r")
 par(mfrow=c(1,1),mar=c(.1,.1,2,1))
 pr<-0
 plot(c(-1,1),c(-1,1),type="n",xlab="",ylab="",axes=F)

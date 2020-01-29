@@ -1,9 +1,8 @@
 vomit <-
 function(job = 1)
 {
-	dump("vomit", "c:\\StatBook\\vomit.r")
 	
-	td <- matrix(scan("c:\\StatBook\\emesis.txt"), nrow = 2)
+	td <- matrix(scan("./advancedstatistics/RcodeData/emesis.txt"), nrow = 2)
 	dose <- td[1,  ]
 	hour <- td[2,  ]
 	Ldose <- log10(dose) # log10 dose values

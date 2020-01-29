@@ -7,7 +7,6 @@ function(incA=60,pvalue.obs=0.0588,SD=10,n=100,nSurv=10000)
 #SD=standard deviation on family income in town and state, known
 #n=town survey sample size
 #nSurv=imaginary survey sample size in a typical state town
-dump("pvsim","c:\\StatBook\\pvsim.r")
 Z.obs=qnorm(pvalue.obs/2,lower.tail=F)
 z.nSurv=pv.nSurv=rep(NA,nSurv)
 for(i in 1:nSurv) #imaginary nSurv surveys

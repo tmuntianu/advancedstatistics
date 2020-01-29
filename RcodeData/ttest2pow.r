@@ -1,7 +1,6 @@
 ttest2pow <-
 function(n=4,m=4,nSim=100000,alpha=.05,nmu=51)
 {
-dump("ttest2pow","c:\\StatBook\\ttest2pow.r")
 print("It takes some time...")
 powEV=powWE=rep(0,nmu)
 taEV=qt(1-alpha/2,df=n+m-2)

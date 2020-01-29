@@ -1,7 +1,6 @@
 roblinreg2 <-
 function(n=c(10,20),sigma=2,dft=3,dfchi=2,nSim=100000)
 {
-dump("roblinreg2","c:\\StatBook\\roblinreg2.r")
 nn=length(n)
 alpha=.05
 bs=seq(from=-.5,to=.5,length=100);NBS=length(bs)

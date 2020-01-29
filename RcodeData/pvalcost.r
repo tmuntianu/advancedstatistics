@@ -1,7 +1,6 @@
 pvalcost <-
 function(N=1000,n=23,sigma=12)
 { #N=the number of imaginable surveys with n students in each survey
-    dump("pvalcost","c:\\StatBook\\pvalcost.r")
     mu0=17 # the null value
     n=23 #number of students in each survey
     Tstat=rep(NA,N)

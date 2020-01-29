@@ -1,7 +1,6 @@
 vartest <-
 function(n=20,s20=1,alpha=0.05,mu=-1,N=200,nSim=100000)
 {
-dump("vartest","c:\\StatBook\\vartest.r")
 
 varq=function(n,alpha,eps=1e-05,maxit=100)
 {

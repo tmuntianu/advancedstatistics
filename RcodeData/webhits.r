@@ -1,9 +1,8 @@
 webhits <-
 function()
 {
-    dump("webhits","c:\\statbook\\webhits.r")
 	par(mfrow=c(1,1),mar=c(4,4,1,1))
-    x<-scan("c:\\statbook\\comwebhits.dat") # read the data
+    x<-scan("./advancedstatistics/RcodeData/comwebhits.dat") # read the data
     x<-x[order(x)] # order observations
     n<-length(x)
     Fx<-(1:n)/n # values for cdf

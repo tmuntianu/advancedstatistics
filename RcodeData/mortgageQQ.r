@@ -1,8 +1,7 @@
 mortgageQQ <-
 function(lambda=.95)
 {
-dump("mortgageQQ","c:\\StatBook\\mortgageQQ.r")
-da=read.csv("c:\\StatBook\\mortgageROC.csv",header=T)
+da=read.csv("./advancedstatistics/RcodeData/mortgageROC.csv",header=T)
 FamilyIncome=da$FamilyIncome
 Default=da$Default
 Y=FamilyIncome[Default=="yes"];X=FamilyIncome[Default=="no"]

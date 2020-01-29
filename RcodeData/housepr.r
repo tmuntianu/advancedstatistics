@@ -1,8 +1,7 @@
 housepr <-
 function()
 {
-dump("housepr","c:\\StatBook\\housepr.r")
-dat=read.csv("c:\\StatBook\\houseprice.csv",header=T)
+dat=read.csv("./advancedstatistics/RcodeData/houseprice.csv",header=T)
 AB=dat[,1];pr=dat$price;ft=dat$footage
 prA=pr[AB=="A"];prB=pr[AB=="B"]
 ftA=ft[AB=="A"];ftB=ft[AB=="B"]

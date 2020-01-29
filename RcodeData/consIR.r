@@ -1,7 +1,6 @@
 consIR <-
 function()
 {
-dump("consIR","c:\\StatBook\\consIR.r")
 #set.seed(3)
 #N=11;n=326;sigma=5
 #mu=round(runif(N,min=13,max=100))
@@ -15,8 +14,8 @@ dump("consIR","c:\\StatBook\\consIR.r")
 #radio=rep(nam,n)
 #custid=rep(1:n,each=N)
 #score=as.vector(y)
-#write.csv(cbind(custid,radio,score),"c:\\StatBook\\consIR.csv",row.names=F)
-d=read.csv("c:\\StatBook\\consIR.csv",header=T)
+#write.csv(cbind(custid,radio,score),"./advancedstatistics/RcodeData/consIR.csv",row.names=F)
+d=read.csv("./advancedstatistics/RcodeData/consIR.csv",header=T)
 print(d)
 N=11;n=326
 y=matrix(d[,3],nrow=N,ncol=n)

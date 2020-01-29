@@ -1,7 +1,6 @@
 thlinmod <-
 function(n=10,b0=-1,tau=.6,s2=2,sdx=1,sdu=.5,roxu=.7,nSim=100000)
 {
-dump("thlinmod","c:\\StatBook\\thlinmod.r")
 par(mfrow=c(1,1),mar=c(4,4,3.5,1),cex.lab=1.5)
 X=rnorm(n*nSim,sd=sdx);Z=rnorm(n*nSim)
 h=roxu/sdx/sqrt(1-roxu^2);U=(Z+h*X)/sqrt(h^2*sdx^2+1)

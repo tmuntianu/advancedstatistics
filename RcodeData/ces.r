@@ -1,8 +1,7 @@
 ces <-
 function(ss=4)
 {
-dump("ces","c:\\StatBook\\ces.r")
-da=read.csv("c:\\StatBook\\CES.csv",header=T,stringsAsFactors=F)
+da=read.csv("./advancedstatistics/RcodeData/CES.csv",header=T,stringsAsFactors=F)
 K=da$K;L=da$L;Y=da$Y
 # Starting values
 ngrid=100

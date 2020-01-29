@@ -1,8 +1,7 @@
 BPlong <-
 function()
 {
-dump("BPlong","c:\\StatBook\\BPlong.r")
-da=read.csv("c:\\StatBook\\BPdata.csv",header=T,stringsAsFactors=F)
+da=read.csv("./advancedstatistics/RcodeData/BPdata.csv",header=T,stringsAsFactors=F)
 #return(da)
 n=nrow(da)
 #X=matrix(0,nrow=90,ncol=30+3)

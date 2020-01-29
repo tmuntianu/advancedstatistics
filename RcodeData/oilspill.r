@@ -1,7 +1,6 @@
 oilspill <-
 function(job=1,dist=3000,nSim=150)
 {
-dump("oilspill","c:\\StatBook\\oilspill.r")
 if(job==1) #create the graph
 {
 	par(mfrow=c(1,1),mar=c(4,4,1,1))

@@ -1,7 +1,6 @@
 fracksim <-
 function(mu=3,SD=2,p=2,nSim=1000000)
 {
-dump("fracksim","c:\\StatBook\\fracksim.r")
 par(mfrow=c(1,2))
 X=rnorm(nSim,mean=mu,sd=SD)
 Z=X-floor(X)

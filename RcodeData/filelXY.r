@@ -1,7 +1,6 @@
 filelXY <-
 function(mu=3,nExp=100000,a=10,nbins=100)
 {
-    dump("filelXY","c:\\StatBook\\filelXY.r")
     XYdens=function(z,mu)
     {
         e1=exp(-mu^2*z^2/2/(z^2+1))

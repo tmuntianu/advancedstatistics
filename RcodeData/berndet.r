@@ -1,7 +1,6 @@
 berndet <-
 function(prob=.5,nExp=10000,eps=0.0000000001)
 {
-dump("berndet","c:\\StatBook\\berndet.r")
 deti=rep(NA,nExp)
 pr=rep(NA,9)
 for(n in 2:10)

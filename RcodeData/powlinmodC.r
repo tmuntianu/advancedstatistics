@@ -1,7 +1,6 @@
 powlinmod <-
 function(N01=TRUE,alpha=0.05,b0=-1,tau=.6,s2=2,sdx=1,sdu=.5,roxu=.7,nSim=100000)
 {
-dump("powlinmod","c:\\StatBook\\powlinmod.r")
 par(mfrow=c(1,2),mar=c(4,4.5,3.5,1),cex.lab=1.5,cex.main=1.5)
 Nb=50 # number of grid values for b.alt 
 k=0

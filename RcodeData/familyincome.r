@@ -1,8 +1,7 @@
 familyincome <-
 function()
 {
-dump("familyincome","c:\\StatBook\\familyincome.r")
-Y=scan("c:\\StatBook\\familyincome.txt")
+Y=scan("./advancedstatistics/RcodeData/familyincome.txt")
 m=sum(Y<15)
 n=length(Y)
 pr10=m/n

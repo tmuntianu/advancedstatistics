@@ -1,7 +1,6 @@
 bufprobSA <-
 function(prop.given,Nsim=1000)
 {
-dump("bufprobSA","c:\\StatBook\\bufprobSA.r")
 prop.est=function(ro,prop.given,N)
 {
 	nc=runif(N);ang=pi*runif(N)

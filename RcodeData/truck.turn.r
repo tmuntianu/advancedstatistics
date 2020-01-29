@@ -1,7 +1,6 @@
 truck.turn <-
 function(tr.tu=10,car.time=3,Nmax=1000,nSim=10000)
 {
-dump("truck.turn","c:\\StatBook\\truck.turn.r")
 nsec=rep(0<nSim)
 for(isim in 1:nSim)
 {

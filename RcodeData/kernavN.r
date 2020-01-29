@@ -1,7 +1,6 @@
 kernavN <-
 function(n=20,h=.1)
 {
-dump("kernavN","c:\\StatBook\\kernavN.r")
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 x=rnorm(n=n,mean=1,sd=2)
 low=min(x)-1;up=max(x)+1

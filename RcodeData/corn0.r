@@ -1,7 +1,6 @@
 corn0 <-
 function(ro=.7,alpha=.05,nSim=100000)
 {
-	dump("corn0","c:\\StatBook\\corn0.r")
 	par(mfrow=c(1,2),mar=c(3.5,3.5,2,1),cex.main=1.5)
 	ro.alt=seq(from=0,to=.99,length=50);nro.alt=length(ro.alt)
 	

@@ -1,7 +1,6 @@
 mvsd <-
 function(x,p)
 {
-	dump("mvsd","c:\\StatBook\\mvsd.r")
     # x is the vector of values
     # p is the vector of probabilities
     n<-length(x) # recover size

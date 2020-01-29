@@ -1,15 +1,14 @@
 saldisc <-
 function(job=1,m=600,n=500,delta=2,ss=6,LSD=17)
 {
-dump("saldisc","c:\\StatBook\\saldisc.r")
 set.seed(ss)
 chol.drug=rnorm(n=n,mean=-delta,sd=LSD)
 chol.placebo=rnorm(n=m,mean=0,sd=LSD)
 dat=as.data.frame(cbind(round(c(chol.placebo,chol.drug),1),c(rep(0,m),rep(1,n))))
 names(dat)=c("chol.perc","treatm")
-write.csv(dat,"c:\\StatBook\\saldisc.csv",row.names=F)
+write.csv(dat,"./advancedstatistics/RcodeData/saldisc.csv",row.names=F)
 
-dat=read.csv("c:\\StatBook\\saldisc.csv")
+dat=read.csv("./advancedstatistics/RcodeData/saldisc.csv")
 chol.drug=dat$chol.perc[dat$treatm==1];n=length(chol.drug)
 chol.placebo=dat$chol.perc[dat$treatm==0];m=length(chol.placebo)
 

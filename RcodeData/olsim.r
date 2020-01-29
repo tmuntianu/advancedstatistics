@@ -1,7 +1,6 @@
 olsim <-
 function(n=10,alpha=-1,beta=1,x=1:n,sigma=2,nSim=10000)
 {
-dump("olsim","c:\\StatBook\\olsim.r")
 par(mfrow=c(1,3))
 mx=mean(x);SUMx=var(x)*(n-1)
 b.est=a.est=s2.est=tstat=rep(NA,nSim)

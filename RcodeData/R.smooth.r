@@ -1,9 +1,8 @@
 R.smooth <-
 function()
 {
-dump("R.smooth","c:\\StatBook\\R.smooth.r")
 print(date())
-rd=scan("c:\\StatBook\\R.pgm",what="")
+rd=scan("./advancedstatistics/RcodeData/R.pgm",what="")
 nr=as.numeric(rd[2]);nc=as.numeric(rd[3])
 rm=matrix(as.numeric(rd[5:length(rd)]),ncol=nc,nrow=nr)
 rm=rm[,seq(from=nc,to=1,by=-1)]

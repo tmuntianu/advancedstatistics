@@ -1,7 +1,6 @@
 q2pr <-
 function(NSIG=100)
 {
-dump("q2pr","c:\\StatBook\\q2pr.r")
 integr=function(y1,beta,sigma)
 dnorm((y1-beta)/sigma)*pnorm((beta^2-3/4^(1/3)*abs(y1)^(2/3)-.5)/sigma)/sigma
 par(mfrow=c(1,1),mar=c(4,4,1,1))

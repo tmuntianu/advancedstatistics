@@ -1,7 +1,6 @@
 thastest <-
 function(n=30,p0=.3,nSim=100000)
 {
-dump("thastest","c:\\StatBook\\thastest.r")
 par(mfrow=c(1,2),mar=c(4,4.5,3,1),cex.lab=1.5)
 m=rbinom(n=nSim,size=n,prob=p0)
 p.hat=m/n

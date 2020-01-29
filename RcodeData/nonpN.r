@@ -1,7 +1,6 @@
 nonpN <-
 function(SD=1,n=30,dft=3,alpha=.05,nSim=100000)
 {
-	dump("nonpN","c:\\StatBook\\nonpN.r")	
 	mua=seq(from=-1,to=1,length=100);N=length(mua)
 	powN=powB=rep(NA,N)
 	Z1a=qt(1-alpha/2,df=n-1)

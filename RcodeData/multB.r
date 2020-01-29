@@ -1,7 +1,6 @@
 multB <-
 function(x=c(1,5,3),p1=.3,p2=.5,nSim=100000)
     {
-       dump("multB","c:\\StatBook\\multB.r")
        p3=1-p1-p2
        n=sum(x)
        X=matrix(0,nrow=nSim,ncol=3)

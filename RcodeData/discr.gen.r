@@ -1,7 +1,6 @@
 discr.gen <-
 function(Ngen=100000,n=10,x=rnorm(n,sd=3),p=runif(n))
 {
-dump("discr.gen","c:\\StatBook\\discr.gen.r")
 par(mfrow=c(1,1),mar=c(4,4,3,1))
 n=length(p)
 iox=order(x);p=p[iox];x=x[iox] # order x and p

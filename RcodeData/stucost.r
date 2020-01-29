@@ -1,16 +1,15 @@
 stucost <-
 function()
 {
-dump("stucost","c:\\StatBook\\stucost.r")
 #set.seed(73)
 #nf=45;ns=23
 #fr=round(exp(rnorm(nf,mean=log(21),sd=.3)))
 #so=round(exp(rnorm(ns,mean=log(25),sd=.3)))
 #da=as.data.frame(cbind(c(fr,so),c(rep("FRE",nf),rep("SOF",ns))))
 #names(da)=c("Cost","Student")
-#write.csv(da,"c:\\StatBook\\stucost.csv",row.names=F)
+#write.csv(da,"./advancedstatistics/RcodeData/stucost.csv",row.names=F)
 
-da=read.csv("c:\\StatBook\\stucost.csv")
+da=read.csv("./advancedstatistics/RcodeData/stucost.csv")
 X=da$Cost[da$Student=="FRE"] #freshman cost
 nf=length(X)
 Y=da$Cost[da$Student=="SOF"] #sofmore cost

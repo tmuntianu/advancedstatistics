@@ -1,7 +1,6 @@
 buffon <-
 function(job=1,L=1,D=2,nExp=1000)
 {
-dump("buffon","c:\\StatBook\\buffon.r")
 if(job==1)
 {
 	par(mfrow=c(1,1),mar=c(0,0,2,0))

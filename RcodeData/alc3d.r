@@ -1,15 +1,14 @@
 alc3d <-
 function()
 {
-dump("alc3d","c:\\StatBook\\alc3d.r")
-da=read.csv("c:\\StatBook\\alcoholUSA.csv")
+da=read.csv("./advancedstatistics/RcodeData/alcoholUSA.csv")
 nst=nrow(da)
 for(theta in 1:360)
 {
 	thCH=as.character(theta)
 	if(theta<10) thCH=paste("00",thCH,sep="")
 	if(theta>=10 & theta<100) thCH=paste("0",thCH,sep="")
-	jpeg(paste("c:\\StatBook\\alc3d\\alc3d",thCH,".jpg",sep=""),width=1000,height=1000,quality=100)
+	jpeg(paste("./advancedstatistics/RcodeData/alc3d\\alc3d",thCH,".jpg",sep=""),width=1000,height=1000,quality=100)
 	par(mfrow=c(1,1),mar=c(2,2,2,2),cex.main=2,cex.lab=2)
 	op=persp(x=range(da$Beer),y=range(da$Wine),z=matrix(ncol=2,nrow=2),zlim=range(da$Spirits),xlab="Beer",ylab="Wine",zlab="Spirits",theta=theta,phi=30,r=1000,ticktype="detailed",nticks=9,main=paste("Alcohol consumption per capita in US, theta=",theta,sep=""))	
 	p3=trans3d(x=da$Beer, y=da$Wine, z=da$Spirits, pmat=op)

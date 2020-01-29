@@ -1,7 +1,6 @@
 randS <-
 function(nSim=100000,mu=-1,SD=1,lambda=4)
 {
-dump("randS","c:\\StatBook\\randS.r")
 N=rpois(nSim,lambda)
 N=N[N>0]
 nSim=length(N)

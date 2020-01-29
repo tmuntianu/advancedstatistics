@@ -1,7 +1,6 @@
 LLNintegral <-
 function(ss=4)
 {
-	dump("LLNintegral","c:\\StatBook\\LLNintegral.r")
 	par(mfrow=c(1,1),mar=c(4,4,.2,.5))
 	set.seed(ss)
 	n=seq(from=100,to=10000,by=100)

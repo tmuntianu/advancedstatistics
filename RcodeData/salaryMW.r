@@ -1,8 +1,7 @@
 salaryMW <-
 function(dvis=.1)
 {
-dump("salaryMW","c:\\StatBook\\salaryMW.r")
-dat=read.csv("c:\\StatBook\\salaryMW_paired.csv")
+dat=read.csv("./advancedstatistics/RcodeData/salaryMW_paired.csv")
 salaryM=dat[,1];salaryW=dat[,2];salL=c(salaryM,salaryW)
 n=nrow(dat)
 par(mfrow=c(1,2),mar=c(2,3.5,3,.1))

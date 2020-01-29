@@ -1,7 +1,6 @@
 prmb <-
 function(r0=2,mu1=3,mu2=5,s1=1,s2=4)
 {
-dump("prmb","c:\\StatBook\\prmb.r")
 par(mfrow=c(1,1),mar=c(3.75,3.5,1,1))
 alpha=seq(from=0,to=1,length=100)
 mu=alpha*mu1+(1-alpha)*mu2

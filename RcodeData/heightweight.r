@@ -1,8 +1,7 @@
 heightweight <-
 function(job=1)
 {
-dump("heightweight","c:\\StatBook\\heightweight.r")
-da=read.csv("c:\\StatBook\\HeightWeight.csv",header=T)
+da=read.csv("./advancedstatistics/RcodeData/HeightWeight.csv",header=T)
 url="http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights"
 h=da[,2];w=da[,3]
 n=length(h)

@@ -1,7 +1,6 @@
 vecomp <-
 function(job=1,N=10000)
 {
-dump("vecomp","c:\\StatBook\\vecomp.r")
 #use 5 methods to compute exp(-(3*x^2-4*x*y+2*y^2)) for integral approximation
 x=seq(from=-1,to=1,length=N);y=seq(from=-1,to=1,length=N)
 M=matrix(ncol=N,nrow=N)

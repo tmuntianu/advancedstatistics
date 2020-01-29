@@ -1,8 +1,7 @@
 mle.gamma.CT <-
 function(povsal=11000)
 {
-dump("mle.gamma.CT","c:\\StatBook\\mle.gamma.CT.r")
-sc=scan("c:\\StatBook\\Connecticut.txt",what="")
+sc=scan("./advancedstatistics/RcodeData/Connecticut.txt",what="")
 sc=as.numeric(sc);X=sc[!is.na(sc)]
 n=length(X)
 lMM=mean(X)/var(X);aMM=mean(X)^2/var(X)

@@ -1,7 +1,6 @@
 s47 <-
 function(K=200,N=1000,d=.05)
 {
-    dump("s47","c:\\StatBook\\s47.r")
     par(mfrow=c(1,1),mar=c(.5,.5,3.25,.5))
     dN=round(d*N)
     M=matrix(0,ncol=N,nrow=N)

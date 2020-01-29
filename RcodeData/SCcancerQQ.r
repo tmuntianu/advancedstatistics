@@ -1,8 +1,7 @@
 SCcancerQQ <-
 function(job=1,alpha=.05)
 {
-dump("SCcancerQQ","c:\\StatBook\\SCcancerQQ.r")
-y=read.csv(file="c:\\StatBook\\DeathYears.csv",header=F)[,1]
+y=read.csv(file="./advancedstatistics/RcodeData/DeathYears.csv",header=F)[,1]
 y=y[order(y)];n=length(y)
 Fv=(1:n-.5)/n
 q=-log(1-Fv)

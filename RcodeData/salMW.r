@@ -1,8 +1,7 @@
 salMW <-
 function(n=300,job=1,w=.05)
 {
-dump("salMW","c:\\StatBook\\salMW.r")
-d=read.csv("c:\\StatBook\\salary.csv",header=T)
+d=read.csv("./advancedstatistics/RcodeData/salary.csv",header=T)
 dptm=d[,1];sexC=d[,2];year=d[,3];y=d[,4]
 d1=d2=d3=d4=rep(0,n)
 d1[dptm=="Sales"]=1

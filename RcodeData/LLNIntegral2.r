@@ -1,7 +1,6 @@
 LLNintegral2 <-
 function(lambda=1,ss=4)
 {
-	dump("LLNintegral2","c:\\StatBook\\LLNintegral2.r")
 	set.seed(ss)
 	x=seq(from=1,to=20,length=100)
 	par(mfrow=c(1,2),mar=c(4,4.5,.2,.5),cex.lab=1.5)

@@ -1,7 +1,6 @@
 olsnormT <-
 function(job=1,alpha=-1,beta=1,sigma=.5,muX=2,sigmaX=1,p=.3,nSim=100000)
 {
-dump("olsnormT","c:\\StatBook\\olsnormT.r")
 par(mfrow=c(1,2),mar=c(3.5,3.5,3,1))
 for(n in c(10,30))
 {

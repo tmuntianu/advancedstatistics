@@ -1,14 +1,13 @@
 leftright <-
 function(n=173,st=6)
 {
-dump("leftright","c:\\StatBook\\leftright.r")
 par(mfrow=c(1,2),mar=c(4,4,3,1),cex.main=2)
 #set.seed(st)
 #trueL=rnorm(n=n,mean=46,sd=2)
 #right=trueL+rnorm(n=n,mean=0,sd=.5)
 #left=trueL+rnorm(n=n,mean=0,sd=.5)
-#write.csv(x=round(cbind(left,right),1),"c:\\StatBook\\leftright.csv",row.names=F)
-d=read.csv("c:\\StatBook\\leftright.csv",header=T)
+#write.csv(x=round(cbind(left,right),1),"./advancedstatistics/RcodeData/leftright.csv",row.names=F)
+d=read.csv("./advancedstatistics/RcodeData/leftright.csv",header=T)
 right=d$right;left=d$left
 
 plot(left,right,xlab="",ylab="",main="Right arm versus left arm")

@@ -1,7 +1,6 @@
 smallF <-
 function(job=1,n1=3,n2=10,nu=1,alpha=.05,nu.alt=2,nSim=100000)
 {
-dump("smallF","c:\\StatBook\\smallF.r")
 
 q1q2F=function(n1,n2,alpha,maxit=100,eps=0.0001) #nonequal tail quantiles
 {

@@ -1,7 +1,6 @@
 piest <-
 function(sigma=1,n=200,minT=5,maxT=20,nSim=500000)
 {
-dump("piest","c:\\StatBook\\piest.r")
 d=matrix(rep(runif(n,min=minT,max=maxT),nSim),byrow=T,ncol=n)
 D=d+matrix(rnorm(nSim*n,mean=0,sd=sigma),ncol=n)
 C=pi*d+matrix(rnorm(nSim*n,mean=0,sd=sigma),ncol=n)

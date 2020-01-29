@@ -1,7 +1,6 @@
 histN <-
 function(mu=0,SD=1)
 {
-	dump("histN","c:\\StatBook\\histN.r")
 	par(mfrow=c(1,1),mar=c(4,4,2,.1))
 	x=rnorm(1000,mean=mu,sd=SD)
 	hist(x,probability=T,main=paste("mean =",mu, "and SD =",SD),col="gray93")

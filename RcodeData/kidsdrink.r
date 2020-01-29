@@ -1,8 +1,7 @@
 kidsdrink <-
 function(job=1)
 {
-dump("kidsdrink","c:\\StatBook\\kidsdrink.r")
-d=read.csv("c:\\StatBook\\kidsdrink.csv",header=T)
+d=read.csv("./advancedstatistics/RcodeData/kidsdrink.csv",header=T)
 if(job==1)
 {
 	par(mfrow=c(1,1),mar=c(4.5,4.5,1,1),cex.lab=1.5)

@@ -1,8 +1,7 @@
 webhits.hist <-
 function()
 {
-dump("webhits.hist","c:\\statbook\\webhits.hist.r")
-y<-scan("c:\\statbook\\comwebhits.dat")
+y<-scan("./advancedstatistics/RcodeData/comwebhits.dat")
 n=length(y)
 par(mfrow=c(1,2),mar=c(4,4,2,.1))
 hist(y,xlim=c(0,24),xlab="Time of the website hits, h",main="Default histogram",col="gray95")

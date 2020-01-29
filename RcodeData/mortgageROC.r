@@ -1,8 +1,7 @@
 mortgageROC <-
 function()
 {
-dump("mortgageROC","c:\\StatBook\\mortgageROC.r")
-da=read.csv("c:\\StatBook\\mortgageROC.csv",header=T)
+da=read.csv("./advancedstatistics/RcodeData/mortgageROC.csv",header=T)
 FamilyIncome=log10(da$FamilyIncome)
 Default=da$Default
 Y=FamilyIncome[Default=="yes"]

@@ -1,7 +1,6 @@
 robias <-
 function(Nsim=500000)
 {
-dump("robias","c:\\StatBook\\robias.r")
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 ros=seq(from=-.9,to=.9,by=.1)
 Nros=length(ros)

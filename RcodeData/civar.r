@@ -1,7 +1,6 @@
 civar <-
 function (job=1,n=10,alpha=0.05,eps=1e-08,maxiter=10,nExp=1e+06) 
 {
-dump("civar", "c:\\StatBook\\civar.r")
 if(job==1) # shotest CI for normal variance
 {
     n0=4;n1=15;n=n0:n1

@@ -1,7 +1,6 @@
 birthdaysim <-
 function(job=1,n.people=23,Nexp=100000)
 {
-dump("birthdaysim","c:\\statbook\\birthdaysim.r")
 ii=1:365
 if(job==1)
 {

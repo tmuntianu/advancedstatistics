@@ -1,7 +1,6 @@
 dn3 <-
 function(nOBS=10000,muX=1,sdX=2,muY=1,sdY=2,dr="c")
 {
-dump("dn3",paste(dr,":\\statbook\\dn3.r",sep=""))
 par(mfrow=c(1,3),mar=c(4,4,3,1),cex.axis=1.5,cex.main=2)
 x.range=c(muX-3*sdX,muX+3*sdX)
 y.range=c(muY-3*sdY,muY+3*sdY)

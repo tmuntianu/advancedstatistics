@@ -1,11 +1,10 @@
 asviol <-
 function () 
 {
-dump("asviol","c:\\StatBook\\asviol.r")
 #CDF statistical comparison
-sv=scan("c:\\StatBook\\Vermont.txt",what="")
+sv=scan("./advancedstatistics/RcodeData/Vermont.txt",what="")
 sv=as.numeric(sv);sv=sv[!is.na(sv)]
-sc=scan("c:\\StatBook\\Connecticut.txt",what="")
+sc=scan("./advancedstatistics/RcodeData/Connecticut.txt",what="")
 sc=as.numeric(sc);sc=sc[!is.na(sc)]
 svL=log10(sv/1000);scL=log10(sc/1000)
 saly=c(20,30,40,60,100,150,250);Lsaly=log10(saly)

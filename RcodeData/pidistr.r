@@ -1,9 +1,8 @@
 pidistr <-
 function()
 {
-dump("pidistr","c:\\StatBook\\pidistr.r")
-pidig=read.csv("c:\\StatBook\\pi100000digits.csv",col.names=F)
-edig=read.csv("c:\\StatBook\\e10000digits.csv",col.names=F)
+pidig=read.csv("./advancedstatistics/RcodeData/pi100000digits.csv",col.names=F)
+edig=read.csv("./advancedstatistics/RcodeData/e10000digits.csv",col.names=F)
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 pr.pi=pr.e=rep(0,10)
 for(i in 1:10)

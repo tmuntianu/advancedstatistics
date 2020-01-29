@@ -1,7 +1,6 @@
 metpr2 <-
 function(Nsim=100000)
 {
-dump("metpr2","c:\\StatBook\\metpr2.r")
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 theta=1:50
 pr=rep(NA,50)

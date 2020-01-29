@@ -1,7 +1,6 @@
 CImovie <-
 function(mu.true=1,sigma=2,n=10,Nsim=100)
 {
-dump("CImovie","c:\\StatBook\\CImovie.r")
 par(mfrow=c(1,2),mar=c(4,4,3,1))
 Lmu=Umu=lw=rep(NA,Nsim)
 for(lambda in c(.5,.95))

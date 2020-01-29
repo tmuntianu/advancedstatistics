@@ -1,7 +1,6 @@
 powsim <-
 function(job=1,n=10,m=5,nSim=100000,mu0=1,SD=1.5,alpha=.05,NP=100,NPSIM=21)
 {
-dump("powsim","c:\\StatBook\\powsim.r")
 
 if(job==1) #one-sample t-test
 {

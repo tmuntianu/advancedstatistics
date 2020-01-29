@@ -1,8 +1,7 @@
 pidistr1010 <-
 function()
 {
-dump("pidistr1010","c:\\StatBook\\pidistr1010.r")
-pi1m=read.csv("c:\\StatBook\\pi100000digits.csv",col.names=F)[,1]
+pi1m=read.csv("./advancedstatistics/RcodeData/pi100000digits.csv",col.names=F)[,1]
 n=length(pi1m)
 pr1010=as.data.frame(matrix(,ncol=10,nrow=10),row.names=as.character(0:9))
 names(pr1010)=as.character(0:9)

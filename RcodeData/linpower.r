@@ -1,7 +1,6 @@
 linpower <-
 function(n=10,m=3,k=2,NL=30,beta=c(1,.5,-.5),sigma=2,alpha=.05,nSim=10000,st=3)
 {
-dump("linpower","c:\\StatBook\\linpower.r")
 set.seed(st)
 C=matrix(c(0,1,1,0,-1,0),nrow=k);a=C%*%beta
 

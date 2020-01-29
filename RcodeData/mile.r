@@ -1,7 +1,6 @@
 mile <-
 function()
 {
-dump("mile","c:\\StatBook\\mile.r")
 n=2*10*52*5 #number of times go to work over 10 years
 ex.dist=5+1387/5280 #exact distance to work
 ml=rep(NA,n) #allocate an array of odometer miles  

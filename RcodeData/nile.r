@@ -1,8 +1,7 @@
 nile <-
 function(yc=1898)
 {
-dump("nile","c:\\StatBook\\nile.r")
-d=read.csv("c:\\StatBook\\NileFlow.csv")
+d=read.csv("./advancedstatistics/RcodeData/NileFlow.csv")
 year=d[,2];flow=d[,3]
 par(mfrow=c(1,1),mar=c(3.5,3.5,1,.1))
 plot(year,flow,type="b",axes=F,xlab="",ylab="",ylim=c(450,1350),lwd=2)

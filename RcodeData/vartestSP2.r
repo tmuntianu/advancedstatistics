@@ -1,9 +1,8 @@
 vartestSP2 <-
 function()
 {
-dump("vartestSP2","c:\\StatBook\\vartestSP2.r")
-GOOG=read.csv("c:\\StatBook\\GOOG.csv",stringsAsFactors=F);GOOG=GOOG[,6]
-AMZN=read.csv("c:\\StatBook\\AMZN.csv",stringsAsFactors=F);AMZN=AMZN[,6]
+GOOG=read.csv("./advancedstatistics/RcodeData/GOOG.csv",stringsAsFactors=F);GOOG=GOOG[,6]
+AMZN=read.csv("./advancedstatistics/RcodeData/AMZN.csv",stringsAsFactors=F);AMZN=AMZN[,6]
 n=length((AMZN))
 par(mfrow=c(1,2),mar=c(3.5,3.75,2,1),cex.main=1.5)
 matplot(1:n,cbind(GOOG,AMZN),type="l",lwd=2,col=2:3,lty=1,xlab="",ylab="",main="Stock price")

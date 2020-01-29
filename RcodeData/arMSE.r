@@ -1,7 +1,6 @@
 arMSE <-
 function(NSIM=100000,ro=2)
 {
-dump("arMSE","c:\\StatBook\\arMSE.r")
 Ar.true=pi*ro^2
 SDro=seq(from=.1,to=.5,by=.1);nsd=length(SDro)
 RMSE1=RMSE2=RMSE3=rep(NA,nsd)

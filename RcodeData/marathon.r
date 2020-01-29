@@ -1,8 +1,7 @@
 marathon <-
 function()
 {
-dump("marathon","c:\\StatBook\\marathon.r")
-da=matrix(scan("c:\\StatBook\\marathonWR2.txt",what=""),ncol=2,byrow=T)
+da=matrix(scan("./advancedstatistics/RcodeData/marathonWR2.txt",what=""),ncol=2,byrow=T)
 year=as.numeric(da[,2])
 ti=as.character(da[,1])
 ti=120+as.numeric(substring(ti,1,2))+as.numeric(substring(ti,4,6))/60

@@ -1,7 +1,6 @@
 logLnr <-
 function(p=0.5,mu=4,sigma=1)
 {
-dump("logLnr","c:\\StatBook\\logLnr.r")
 
 ptNR=function(mu,sigma,p)
 {

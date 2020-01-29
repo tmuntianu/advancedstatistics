@@ -1,7 +1,6 @@
 binprop2 <-
 function(n1=50,n2=40,alpha=0.05,N=100,nSim=10000)
 {
-dump("binprop2","c:\\StatBook\\binprop2.r")
 par(mfrow=c(1,2),mar=c(3.5,3.5,3,1),cex.main=1.5)
 cl=c(1,"gray70")
 Z1a=qnorm(1-alpha/2)

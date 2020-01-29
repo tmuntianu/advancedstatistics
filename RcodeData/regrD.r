@@ -1,7 +1,6 @@
 regrD <-
 function(alpha=1,beta=1,mux=2,sdx=1,sigma=2.5,nSim=100000)
 {
-dump("regrD","c:\\StatBook\\regrD.r")
 ols.slope=function(X,Y) #vectorized OLS
 {
 	meanX=rowMeans(X);meanX2=rowSums(X^2)

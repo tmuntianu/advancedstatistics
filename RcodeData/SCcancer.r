@@ -1,8 +1,7 @@
 SCcancer <-
 function()
 {
-dump("SCcancer","c:\\StatBook\\SCcancer.r")
-y=read.csv(file="c:\\StatBook\\DeathYears.csv",header=F)[,1]
+y=read.csv(file="./advancedstatistics/RcodeData/DeathYears.csv",header=F)[,1]
 y=y[order(y)]
 n=length(y)
 Fv=seq(from=1,to=0,length=n)

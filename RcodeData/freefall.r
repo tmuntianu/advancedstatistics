@@ -1,7 +1,6 @@
 freefall <-
 function(job=1,n=2,N=200,g=9.8)
 {
-dump("freefall","c:\\StatBook\\freefall.r")
 if(job==1)
 {
 	time=seq(from=0,to=2,length=N)
@@ -37,7 +36,7 @@ if(job==2)
 if(job==3)
 {
 	ff=function(time,C.est,g=9.7935) 1/C.est*log(.5*(exp(time*sqrt(g*C.est))+exp(-time*sqrt(g*C.est))))
-	da=read.csv("c:\\StatBook\\FallingHat.csv")
+	da=read.csv("./advancedstatistics/RcodeData/FallingHat.csv")
 	n=nrow(da)
 	par(mfrow=c(1,1),mar=c(4,4,1,1))
 	plot(da$time,da$St,xlab="",ylab="")

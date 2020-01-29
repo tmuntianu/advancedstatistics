@@ -1,8 +1,7 @@
 benfordFT <-
 function(job=1,nSim=10000,lambda=.0001,n0=10)
 {
-dump("benfordFT","c:\\StatBook\\benfordFT.r")
-load("c:\\StatBook\\sales.Rdata")
+load("./advancedstatistics/RcodeData/sales.Rdata")
 head(sales)
 y=sales$Val;z=sales$Insp
 z=z[!is.na(y)]

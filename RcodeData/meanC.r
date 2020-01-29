@@ -1,7 +1,6 @@
 meanC <-
 function(nSim=100000)
 {
-dump("meanC","c:\\StatBook\\meanC.r")
 par(mfrow=c(1,2),mar=c(4,4,3,1))
 for(n in c(2,10))
 {

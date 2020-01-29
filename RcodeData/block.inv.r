@@ -1,7 +1,6 @@
 block.inv <-
 function(m=5,k=3)
 {
-dump("block.inv","c:\\StatBook\\block.inv.r")
 M=matrix(rnorm(m^2),ncol=m,nrow=m)
 M=t(M)%*%M #we need a symmetric matrix
 iM=solve(M)

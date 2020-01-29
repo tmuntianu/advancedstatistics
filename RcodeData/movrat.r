@@ -1,7 +1,6 @@
 movrat <-
 function(wid=.1)
 {
-dump("movrat","c:\\StatBook\\movrat.r")
 #set.seed(5)
 #n=500;m=350
 #ageM=round(runif(n,min=28,max=77))
@@ -15,8 +14,8 @@ dump("movrat","c:\\StatBook\\movrat.r")
 #sex=sex[score>1 & score<=100]
 #score=score[score>1 & score<=100]
 #da=data.frame(cbind(sex,score,age))
-#write.csv(da,"c:\\StatBook\\movrat.csv",row.names=F)
-da=read.csv("c:\\StatBook\\movrat.csv",header=T)
+#write.csv(da,"./advancedstatistics/RcodeData/movrat.csv",row.names=F)
+da=read.csv("./advancedstatistics/RcodeData/movrat.csv",header=T)
 sex=da[,1];score=da[,2];age=da[,3]
 print(paste("Mean age among men and women =",round(mean(age[sex==1])),", ", round(mean(age[sex==0]))))
 par(mfrow=c(1,2),mar=c(3,4,3,1))

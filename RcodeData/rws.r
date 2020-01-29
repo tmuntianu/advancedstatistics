@@ -2,7 +2,6 @@ rws <-
 function(job=1,n=10,probx=.5,proby=.5,Tx=n,Ty=n,stepMAX=5000,NSIM=1000)
 {
 # n=squares size; (Tx,Ty) the point of arrival; stepMAX=max number of steps
-dump("rws","c:\\StatBook\\rws.r")
 if(job==1)
 {
     x=rep(NA,stepMAX);y=rep(NA,stepMAX)
@@ -14,7 +13,7 @@ if(job==1)
 		if(i>=10 && i<100) ic=paste("00",i,sep="") 
 		if(i>=100) ic=paste("0",i,sep="") 
 		# The folder StatBook\\rwsplots\\ must exist
-		jpeg(paste("c:\\StatBook\\rwsplots\\step_",ic,".jpg",sep=""),quality=100,height=1000,width=1000)
+		jpeg(paste("./advancedstatistics/RcodeData/rwsplots\\step_",ic,".jpg",sep=""),quality=100,height=1000,width=1000)
 		par(mfrow=c(1,1),mar=c(0,0,2,0))
 		plot(1:n,1:n,type="n",xlab="",ylab="",axes=F)		
 		for(j in 1:n)

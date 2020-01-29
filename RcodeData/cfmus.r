@@ -1,7 +1,6 @@
 cfmus <-
 function(job=1,mu=1,sigma=2,n=20,lambda=.95,N=100,nSim=100000,ss=3)
 {
-dump(c("cfmus","bs"),"c:\\StatBook\\cfmus.r")
 set.seed(ss)
 alpha=1-sqrt(lambda)
 Z1a=qnorm(1-alpha/2);c1=qchisq(alpha/2,df=n-1);c2=qchisq(1-alpha/2,df=n-1)

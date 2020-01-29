@@ -1,7 +1,6 @@
 cor0 <-
 function(alpha=.05,nSim=100000)
 {
-	dump("cor0","c:\\StatBook\\cor0.r")
 	par(mfrow=c(1,2),mar=c(3.5,3.5,2,1),cex.main=1.5)
 	ro=seq(from=-.7,to=.7,length=50);nro=length(ro)
 	Zro=.5*(log(1+ro)-log(1-ro))

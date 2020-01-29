@@ -1,7 +1,6 @@
 bufprob <-
 function(n=50,ro.true=1.5,ss=4)
 {
-	dump("bufprob","c:\\StatBook\\bufprob.r")
 	set.seed(ss)
 #simulate n throws
 	nc=runif(n);ang=pi*runif(n)

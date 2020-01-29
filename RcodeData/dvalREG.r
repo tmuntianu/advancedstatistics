@@ -1,7 +1,6 @@
 dvalREG <-
 function(job=1,n=5,delta=1,alpha=1,beta=1,x=1:n,xp=4,sigma=2,nSim=50000)
 {
-dump("dvalREG","c:\\StatBook\\dvalREG.r")
 if(job==1)
 {
 	X=matrix(rnorm(n*nSim,mean=0,sd=sigma),ncol=n)

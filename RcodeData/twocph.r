@@ -1,8 +1,7 @@
 twocph <-
 function(Nst=100,alpha=.05)
 {
-dump("twocph","c:\\StatBook\\twocph.r")
-da=read.csv("c:\\StatBook\\twocph.csv",header=T,stringsAsFactors=F)
+da=read.csv("./advancedstatistics/RcodeData/twocph.csv",header=T,stringsAsFactors=F)
 min=da[,1];Vt=da[,2]
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 plot(min,Vt,type="p",xlab="",ylab="")

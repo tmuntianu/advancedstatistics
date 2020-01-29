@@ -1,8 +1,7 @@
 CDpf <-
 function(job=1,alpha=.05,N=200)
 {
-dump("CDpf","C:\\StatBook\\CDpf.r")
-dat=read.csv("c:\\StatBook\\CDpf.csv")
+dat=read.csv("./advancedstatistics/RcodeData/CDpf.csv")
 y=log(dat$Y);k=log(dat$K);l=log(dat$L)
 n=length(y)
 slm=summary(lm(y~k+l))

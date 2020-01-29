@@ -1,7 +1,6 @@
 qqLOGband <-
 function(lambda=.95,n=100)
 {
-dump("qqLOGband","c:\\StatBook\\qqLOGband.r")
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 x=exp(rnorm(n))
 x=x[order(x)]

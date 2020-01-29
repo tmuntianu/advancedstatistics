@@ -1,7 +1,6 @@
 gotobed <-
 function()
 {
-dump("gotobed","c:\\StatBook\\gotobed.r")
 bes0=function(theta,mu=0,kappa) exp(kappa*cos(theta-mu))/(2*pi)
 bes1=function(theta,mu=0,kappa) cos(theta-mu)*exp(kappa*cos(theta-mu))/(2*pi)
 bes2=function(theta,mu=0,kappa) cos(theta-mu)^2*exp(kappa*cos(theta-mu))/(2*pi)

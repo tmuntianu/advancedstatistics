@@ -1,7 +1,6 @@
 expr <-
 function(NSIM=1000,alpha=-1,beta=.2)
 {
-dump("expr","c:\\StatBook\\expr.r")
 y=runif(NSIM)
 x=-(alpha+log(1/y-1))/beta
 x=x[order(x)]

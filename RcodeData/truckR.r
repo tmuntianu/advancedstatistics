@@ -1,8 +1,7 @@
 truckR <-
 function(job=1)
 {
-dump("truckR","c:\\StatBook\\truckR.r")
-da=read.csv("c:\\StatBook\\truckR.data.csv")
+da=read.csv("./advancedstatistics/RcodeData/truckR.data.csv")
 n=nrow(da);ti=1:n
 if(job==1)
 {

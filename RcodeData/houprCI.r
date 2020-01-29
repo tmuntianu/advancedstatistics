@@ -1,7 +1,6 @@
 houprCI <-
 function(alpha=.5,mu.true=log(400),sd.true=.3,nSim=10000)
 {
-dump("houprCI","c:\\StatBook\\houprCI.r")
 X=c(348,297,734,298,503,465)
 n=length(X)
 t1a=qt(1-alpha/2,df=n-1)

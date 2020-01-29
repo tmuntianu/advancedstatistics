@@ -1,10 +1,9 @@
 autocrash <-
 function(kappa=2*pi*10,acof=4,nk=200)
 {
-dump("autocrash","c:\\StatBook\\autocrash.r")
 bes0=function(theta,mu=0,kappa) exp(kappa*cos(theta-mu))/(2*pi)
 I0=integrate(bes0,kappa=kappa,lower=0,upper=2*pi)$value
-da=read.csv("c:\\StatBook\\autocrash.csv",header=T)
+da=read.csv("./advancedstatistics/RcodeData/autocrash.csv",header=T)
 day=c("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
 hour=da$TIME_OF_DAY/100
 hf=floor(hour)

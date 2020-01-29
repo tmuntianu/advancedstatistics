@@ -1,8 +1,7 @@
 creditpr <-
 function()
 {
-dump("creditpr","c:\\StatBook\\creditpr.r")
-da=read.csv("c:\\StatBook\\creditpr.csv")
+da=read.csv("./advancedstatistics/RcodeData/creditpr.csv")
 p1=da$Paycheck[da$Failed==1];n1=length(p1)
 m1=da$Months[da$Failed==1]
 p0=da$Paycheck[da$Failed==0];n0=length(p0)

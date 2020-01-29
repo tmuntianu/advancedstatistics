@@ -1,7 +1,6 @@
 robloc <-
 function(cc=.5,theta=1,sigma=1,sigmaN=10,delta=.1,nSim=100000,eps=.001,maxit=100)
 {
-dump("robloc","c:\\StatBook\\robloc.r")
 HubEstF=function(Y,start.est,maxit,eps)
 {
 	hub.est=start.est

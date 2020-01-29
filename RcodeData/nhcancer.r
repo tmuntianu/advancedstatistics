@@ -1,11 +1,10 @@
 nhcancer <-
 function(job=1,hx=10000,hy=10000)
 {
-dump("nhcancer","c:\\StatBook\\nhcancer.r")
 if(job==1)
 {
 	par(mfrow=c(1,2),mar=c(0,0,3,0))
-	xytown=read.csv("c:\\StatBook\\NHtowns.csv",stringsAsFactors=F)
+	xytown=read.csv("./advancedstatistics/RcodeData/NHtowns.csv",stringsAsFactors=F)
 	ntowns=nrow(xytown)
 	maxxy=1138
 	x.town=xytown[,1:maxxy];xr=range(x.town[!is.na(x.town)])
@@ -18,7 +17,7 @@ if(job==1)
 		lines(xi,yi,col=2,lwd=2)
 	}
 
-	xyc=read.csv("c:\\StatBook\\xyNHcancer.csv",stringsAsFactors=F)
+	xyc=read.csv("./advancedstatistics/RcodeData/xyNHcancer.csv",stringsAsFactors=F)
 	points(xyc$x,xyc$y,pch=16,cex=.5)
 
 	plot(xr,yr,type="n",xlab="",ylab ="",axes=F,main="Random residents' locations")
@@ -29,14 +28,14 @@ if(job==1)
 		lines(xi,yi,col=2,lwd=2)
 	}
 
-	xyp=read.csv("c:\\StatBook\\xyNHpopulation.csv",stringsAsFactors=F)
+	xyp=read.csv("./advancedstatistics/RcodeData/xyNHpopulation.csv",stringsAsFactors=F)
 	points(xyp$x,xyp$y,pch=16,cex=.1)
 }
 if(job==2)
 {
 	par(mfrow=c(1,2),mar=c(0,0,3,0))
 	n.2dens=100
-	xytown=read.csv("c:\\StatBook\\NHtowns.csv",stringsAsFactors=F)
+	xytown=read.csv("./advancedstatistics/RcodeData/NHtowns.csv",stringsAsFactors=F)
 	ntowns=nrow(xytown)
 	maxxy=1138
 	x.town=xytown[,1:maxxy];xr=range(x.town[!is.na(x.town)])
@@ -44,7 +43,7 @@ if(job==2)
 	x=seq(from=xr[1]-.1*(xr[2]-xr[1]),to=xr[2]+.1*(xr[2]-xr[1]),length=n.2dens)
 	y=seq(from=yr[1]-.1*(yr[2]-yr[1]),to=yr[2]+.1*(yr[2]-yr[1]),length=n.2dens)
 	
-	xy=as.matrix(read.csv("c:\\StatBook\\xyNHcancer.csv",stringsAsFactors=F),ncol=2)
+	xy=as.matrix(read.csv("./advancedstatistics/RcodeData/xyNHcancer.csv",stringsAsFactors=F),ncol=2)
 	fxy=bvn.density.my(x.data=xy[,1],y.data=xy[,2],x=x,y=y,hx=hx,hy=hy)
 	image(x,y,fxy,col=gray((0:255)/255),main="Lung cancer density")
 	points(xy[,1],xy[,2],col=2,pch=16,cex=.5)		
@@ -56,7 +55,7 @@ if(job==2)
 		lines(xi,yi,col="white")
 	}
 		
-	xy=read.csv("c:\\StatBook\\xyNHpopulation.csv",stringsAsFactors=F)
+	xy=read.csv("./advancedstatistics/RcodeData/xyNHpopulation.csv",stringsAsFactors=F)
 	fxy=bvn.density.my(x.data=xy[,1],y.data=xy[,2],x=x,y=y,hx=hx,hy=hy)
 	image(x,y,fxy,col=gray((0:255)/255),main="Population density")
 	points(xy[,1],xy[,2],col=2,pch=16,cex=.075)		
@@ -72,7 +71,7 @@ if(job==3)
 {
 	par(mfrow=c(1,2),mar=c(0,0,0,0))
 	n.2dens=100
-	xytown=read.csv("c:\\StatBook\\NHtowns.csv",stringsAsFactors=F)
+	xytown=read.csv("./advancedstatistics/RcodeData/NHtowns.csv",stringsAsFactors=F)
 	ntowns=nrow(xytown)
 	maxxy=1138
 	x.town=xytown[,1:maxxy];xr=range(x.town[!is.na(x.town)])
@@ -81,9 +80,9 @@ if(job==3)
 	x=seq(from=xr[1]-.1*(xr[2]-xr[1]),to=xr[2]+.1*(xr[2]-xr[1]),length=n.2dens)
 	y=seq(from=yr[1]-.1*(yr[2]-yr[1]),to=yr[2]+.1*(yr[2]-yr[1]),length=n.2dens)
 	
-	xy=as.matrix(read.csv("c:\\StatBook\\xyNHcancer.csv",stringsAsFactors=F),ncol=2)
+	xy=as.matrix(read.csv("./advancedstatistics/RcodeData/xyNHcancer.csv",stringsAsFactors=F),ncol=2)
 	fxyCancer=bvn.density.my(x.data=xy[,1],y.data=xy[,2],x=x,y=y,hx=hx,hy=hy)
-	xy=read.csv("c:\\StatBook\\xyNHpopulation.csv",stringsAsFactors=F)
+	xy=read.csv("./advancedstatistics/RcodeData/xyNHpopulation.csv",stringsAsFactors=F)
 	fxyPop=bvn.density.my(x.data=xy[,1],y.data=xy[,2],x=x,y=y,hx=hx,hy=hy)
 	cancRate=fxyCancer/(fxyPop+.1)
 	image(x,y,cancRate,col=gray((0:255)/255))
@@ -100,7 +99,7 @@ if(job==3)
 	rX=range(x.town,na.rm=T);rY=range(y.town,na.rm=T)
 	points(x.max,y.max,pch=16)
 	library(jpeg)
-	nh.map=readJPEG("c:\\StatBook\\NHmaxcanc.jpg",native=T)
+	nh.map=readJPEG("./advancedstatistics/RcodeData/NHmaxcanc.jpg",native=T)
 	plot(x,y,type="n",xlab="",ylab="",axes=T)
 	rasterImage(nh.map,min(x),min(y),max(x),max(y))	
 }
@@ -108,7 +107,7 @@ if(job==4)
 {
 	hx=3000;hy=3000
 	n.2dens=100
-	xytown=read.csv("c:\\StatBook\\NHtowns.csv",stringsAsFactors=F)
+	xytown=read.csv("./advancedstatistics/RcodeData/NHtowns.csv",stringsAsFactors=F)
 	ntowns=nrow(xytown)
 	maxxy=1138
 	x.town=xytown[,1:maxxy];xr=range(x.town[!is.na(x.town)])
@@ -117,7 +116,7 @@ if(job==4)
 	x=seq(from=xr[1]-.1*(xr[2]-xr[1]),to=xr[2]+.1*(xr[2]-xr[1]),length=n.2dens)
 	y=seq(from=yr[1]-.1*(yr[2]-yr[1]),to=yr[2]+.1*(yr[2]-yr[1]),length=n.2dens)
 	
-	xy=as.matrix(read.csv("c:\\StatBook\\xyNHcancer.csv",stringsAsFactors=F),ncol=2)
+	xy=as.matrix(read.csv("./advancedstatistics/RcodeData/xyNHcancer.csv",stringsAsFactors=F),ncol=2)
 	fxyCancer=bvn.density.my(x.data=xy[,1],y.data=xy[,2],x=x,y=y,hx=hx,hy=hy)
 	fxyCancer[fxyCancer<10^-12]=NA
 	

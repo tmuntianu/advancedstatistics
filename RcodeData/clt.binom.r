@@ -1,7 +1,6 @@
 clt.binom <-
 function(p=.1,N=200)
 {
-dump("clt.binom","c:\\StatBook\\clt.binom.r")
 
 for(n in 2:N)
 {	
@@ -9,7 +8,7 @@ for(n in 2:N)
 	if(n<10) ib=paste("000",n,sep="")
 	if(n>=10 & n<100) ib=paste("00",n,sep="")
 	if(n>=100 & n<1000) ib=paste("0",n,sep="")		
-	png(paste("c:\\StatBook\\clt.binom\\binom",ib,"png",sep=""),width=1500,height=1000)
+	png(paste("./advancedstatistics/RcodeData/clt.binom\\binom",ib,"png",sep=""),width=1500,height=1000)
 	par(mfrow=c(1,1),cex.main=2,cex.lab=1.5,cex.axis=1.5)
 	x=0:n
 	seb=sqrt(p*(1-p)*n)

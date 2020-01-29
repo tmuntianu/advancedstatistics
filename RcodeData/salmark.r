@@ -1,8 +1,7 @@
 salmark <-
 function(NG=200)
 {
-dump(c("salmark","bvn.density.my","Eyx"),"c:\\StatBook\\salmark.r")
-d=read.csv("c:\\StatBook\\Forbes2000.csv",stringsAsFactors=F)
+d=read.csv("./advancedstatistics/RcodeData/Forbes2000.csv",stringsAsFactors=F)
 par(mfrow=c(1,1),mar=c(4,4,1,1))
 s=log10(d$sales);m=log10(d$marketvalue)
 n=length(s)
@@ -32,7 +31,6 @@ function(x.data,y.data,x,y,hx,hy,ro=cor(x.data,y.data))
 {
     #x.data and y.data are coordinates of n data points
     # x and y are coordinates of the grid where f=kernel density is evaluated
-    dump("bvn.density.my","c:\\StatBook\\bvn.density.my.r")
     n=length(x.data);nx=length(x);ny=length(y)
 	ey=rep(1,ny);ex=rep(1,nx)
 	Kxy=matrix(0,nrow=nx,ncol=ny)
@@ -52,7 +50,6 @@ function(yx,ro=0,x,hx=1,hy=1)
 # yx is the nx2 data point (y,x)
 # x=array for which E(Y|X=x) is evaluated
 # hx,hy bandwidth for y and x
-dump("Eyx","c:\\StatBook\\Eyx.r")
 Nx=length(x)
 eNx=rep(1,Nx);en=rep(1,nrow(yx))
 M=(x%*%t(en)-eNx%*%t(yx[,2]))/hx

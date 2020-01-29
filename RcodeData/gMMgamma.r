@@ -1,7 +1,6 @@
 gMMgamma <-
 function(nSim=5000)
 {
-dump("gMMgamma","c:\\StatBook\\gMMgamma.r")
 gMM.gamma=function(aMM,lMM,LM,maxIt=100,eps=.001)
 {
 	H=matrix(ncol=2,nrow=2)

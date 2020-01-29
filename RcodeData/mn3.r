@@ -1,7 +1,6 @@
 mn3 <-
 function(sq=T,nPoints=100,mu=c(-1,2,3),Omega=matrix(c(3,-1,1,-1,2,1,1,1,2),ncol=3,nrow=3))
 {
-    dump("mn3","c:\\StatBook\\mn3.r")
     p3=function(X3,theta=15,phi=30,r=10,mainL)
     {
        op=persp(x=range(X3[,1]),y=range(X3[,2]),z=matrix(ncol=2,nrow=2),

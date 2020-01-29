@@ -1,7 +1,6 @@
 my1sr <-
 function(alpha=0.5)
 {
-	dump("my1sr","c:\\StatBook\\my1sr.r")
     x<-seq(from=0,to=pi/2,length=100)
     y1<-cos(x)
     y2<-alpha*x

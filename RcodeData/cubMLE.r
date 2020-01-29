@@ -1,7 +1,6 @@
 cubMLE <-
 function(N=500,theta=.5,sigma=1,nSim=100000)
 {
-dump("cubMLE","c:\\StatBook\\cubMLE.r")
 par(mfrow=c(1,2),mar=c(4,4,3,1))
 n=2
 x=runif(n)

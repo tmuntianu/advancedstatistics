@@ -1,7 +1,6 @@
 copRN <-
 function(N=100)
 {
-dump("copRN","c:\\StatBook\\copRN.r")
 exRN=function(x,y,ro)
 	1/sqrt(2*pi*(1-ro^2))*exp(.5*qnorm(y)^2-.5/(1-ro^2)*(x^2-2*ro*x*qnorm(y)+qnorm(y)^2))
 EYx=function(x,y,ro)

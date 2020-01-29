@@ -1,7 +1,6 @@
 benfordEXP <-
 function()
 {
-dump("benfordEXP","c:\\StatBook\\BenfordEXP.r")
 lambdas=c(1,.1,.01);nl=length(lambdas)
 par(mfrow=c(1,2))
 d=1:9

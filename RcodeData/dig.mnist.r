@@ -1,7 +1,6 @@
 dig.mnist <-
 function(job=1)
 {
-dump(c("dig.mnist","idmin"),"c:\\StatBook\\dig.mnist.r")
 print(date())
 if(job==1) #plot all digits from train set
 {
